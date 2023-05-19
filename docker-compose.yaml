@@ -1,0 +1,11 @@
+version: '3'
+services:
+  centos_machine:
+    container_name: centos_machine
+    image: centos_machine_image
+    build:
+      context: centos_machine
+    networks:
+      - net
+networks:
+  net:
